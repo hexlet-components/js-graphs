@@ -3,7 +3,7 @@ install:
 
 docs:
 	mkdir -p docs
-	npm run documentation -- build index.js -f md > docs/README.md
+	npx jsdoc2md index.js > docs/README.md
 
 test:
 	npm test -s

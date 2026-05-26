@@ -1,55 +1,55 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Joints #buildTreeFromLeaf 1`] = `
-Array [
+[
   "F",
-  Array [
-    Array [
+  [
+    [
       "J",
-      Array [
-        Array [
+      [
+        [
           "O",
         ],
-        Array [
+        [
           "N",
         ],
       ],
     ],
-    Array [
+    [
       "I",
-      Array [
-        Array [
+      [
+        [
           "M",
         ],
       ],
     ],
-    Array [
+    [
       "C",
-      Array [
-        Array [
+      [
+        [
           "G",
-          Array [
-            Array [
+          [
+            [
               "K",
             ],
-            Array [
+            [
               "L",
             ],
           ],
         ],
-        Array [
+        [
           "A",
-          Array [
-            Array [
+          [
+            [
               "B",
-              Array [
-                Array [
+              [
+                [
                   "E",
                 ],
-                Array [
+                [
                   "D",
-                  Array [
-                    Array [
+                  [
+                    [
                       "H",
                     ],
                   ],
@@ -65,185 +65,185 @@ Array [
 `;
 
 exports[`Joints #makeJoints 1`] = `
-Object {
-  "A": Array [
+{
+  "A": [
     "C",
     "B",
   ],
-  "B": Array [
+  "B": [
     "E",
     "D",
     "A",
   ],
-  "C": Array [
+  "C": [
     "F",
     "G",
     "A",
   ],
-  "D": Array [
+  "D": [
     "H",
     "B",
   ],
-  "E": Array [
+  "E": [
     "B",
   ],
-  "F": Array [
+  "F": [
     "J",
     "I",
     "C",
   ],
-  "G": Array [
+  "G": [
     "K",
     "L",
     "C",
   ],
-  "H": Array [
+  "H": [
     "D",
   ],
-  "I": Array [
+  "I": [
     "M",
     "F",
   ],
-  "J": Array [
+  "J": [
     "O",
     "N",
     "F",
   ],
-  "K": Array [
+  "K": [
     "G",
   ],
-  "L": Array [
+  "L": [
     "G",
   ],
-  "M": Array [
+  "M": [
     "I",
   ],
-  "N": Array [
+  "N": [
     "J",
   ],
-  "O": Array [
+  "O": [
     "J",
   ],
 }
 `;
 
 exports[`Joints #sortJoints 1`] = `
-Object {
-  "A": Array [
+{
+  "A": [
     "B",
     "C",
   ],
-  "B": Array [
+  "B": [
     "A",
     "D",
     "E",
   ],
-  "C": Array [
+  "C": [
     "A",
     "F",
     "G",
   ],
-  "D": Array [
+  "D": [
     "B",
     "H",
   ],
-  "E": Array [
+  "E": [
     "B",
   ],
-  "F": Array [
+  "F": [
     "C",
     "I",
     "J",
   ],
-  "G": Array [
+  "G": [
     "C",
     "K",
     "L",
   ],
-  "H": Array [
+  "H": [
     "D",
   ],
-  "I": Array [
+  "I": [
     "F",
     "M",
   ],
-  "J": Array [
+  "J": [
     "F",
     "N",
     "O",
   ],
-  "K": Array [
+  "K": [
     "G",
   ],
-  "L": Array [
+  "L": [
     "G",
   ],
-  "M": Array [
+  "M": [
     "I",
   ],
-  "N": Array [
+  "N": [
     "J",
   ],
-  "O": Array [
+  "O": [
     "J",
   ],
 }
 `;
 
 exports[`Joints #sortTree 1`] = `
-Array [
+[
   "A",
-  Array [
-    Array [
+  [
+    [
       "B",
-      Array [
-        Array [
+      [
+        [
           "D",
-          Array [
-            Array [
+          [
+            [
               "H",
             ],
           ],
         ],
-        Array [
+        [
           "E",
         ],
       ],
     ],
-    Array [
+    [
       "C",
-      Array [
-        Array [
+      [
+        [
           "F",
-          Array [
-            Array [
+          [
+            [
               "I",
-              Array [
-                Array [
+              [
+                [
                   "M",
                 ],
               ],
             ],
-            Array [
+            [
               "J",
-              Array [
-                Array [
+              [
+                [
                   "N",
                 ],
-                Array [
+                [
                   "O",
                 ],
               ],
             ],
           ],
         ],
-        Array [
+        [
           "G",
-          Array [
-            Array [
+          [
+            [
               "K",
             ],
-            Array [
+            [
               "L",
             ],
           ],
@@ -255,34 +255,34 @@ Array [
 `;
 
 exports[`Joints #sortTree with duplicate leafs 1`] = `
-Array [
+[
   "B",
-  Array [
-    Array [
+  [
+    [
       "A",
-      Array [
-        Array [
+      [
+        [
           "B",
-          Array [
-            Array [
+          [
+            [
               "D",
             ],
           ],
         ],
-        Array [
+        [
           "C",
-          Array [
-            Array [
+          [
+            [
               "E",
             ],
-            Array [
+            [
               "F",
             ],
           ],
         ],
       ],
     ],
-    Array [
+    [
       "D",
     ],
   ],
