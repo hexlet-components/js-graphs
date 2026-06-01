@@ -36,12 +36,16 @@ export const makeJoints = (tree) => {
     }
 
     const flatChildren = _.flatten(children);
-    const neighbors = [...flatChildren, parent]
-      .filter((n) => n && !_.isArray(n));
+    const neighbors = [...flatChildren, parent].filter(
+      (n) => n && !_.isArray(n),
+    );
 
     return {
       [name]: neighbors,
-      ...children.reduce((acc, child) => ({ ...acc, ...iter(child, name) }), {}),
+      ...children.reduce(
+        (acc, child) => ({ ...acc, ...iter(child, name) }),
+        {},
+      ),
     };
   };
 
@@ -111,7 +115,10 @@ export const buildTreeFromLeaf = (joints, name) => {
  * // }
  */
 export const sortJoints = (joints) => {
-  const sortLeaf = (acc, neighbors, name) => ({ ...acc, [name]: _.sortBy(neighbors) });
+  const sortLeaf = (acc, neighbors, name) => ({
+    ...acc,
+    [name]: _.sortBy(neighbors),
+  });
   return _.reduce(joints, sortLeaf, {});
 };
 

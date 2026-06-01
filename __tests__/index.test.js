@@ -1,33 +1,32 @@
 // @ts-check
 
 import {
-  makeJoints, buildTreeFromLeaf, sortJoints, sortTree,
+  buildTreeFromLeaf,
+  makeJoints,
+  sortJoints,
+  sortTree,
 } from '../index.js';
 
 describe('Joints', () => {
-  const tree = ['A', [
-    ['C', [
-      ['F', [
-        ['J', [
-          ['O'],
-          ['N'],
-        ]],
-        ['I', [
-          ['M'],
-        ]],
-      ]],
-      ['G', [
-        ['K'],
-        ['L'],
-      ]],
-    ]],
-    ['B', [
-      ['E'],
-      ['D', [
-        ['H'],
-      ]],
-    ]],
-  ]];
+  const tree = [
+    'A',
+    [
+      [
+        'C',
+        [
+          [
+            'F',
+            [
+              ['J', [['O'], ['N']]],
+              ['I', [['M']]],
+            ],
+          ],
+          ['G', [['K'], ['L']]],
+        ],
+      ],
+      ['B', [['E'], ['D', [['H']]]]],
+    ],
+  ];
 
   let joints;
 
@@ -52,18 +51,19 @@ describe('Joints', () => {
   });
 
   it('#sortTree with duplicate leafs', () => {
-    const treeWithDuplicateLeafs = ['B', [
-      ['D'],
-      ['A', [
-        ['C', [
-          ['F'],
-          ['E'],
-        ]],
-        ['B', [
-          ['D'],
-        ]],
-      ]],
-    ]];
+    const treeWithDuplicateLeafs = [
+      'B',
+      [
+        ['D'],
+        [
+          'A',
+          [
+            ['C', [['F'], ['E']]],
+            ['B', [['D']]],
+          ],
+        ],
+      ],
+    ];
 
     const actual = sortTree(treeWithDuplicateLeafs);
     expect(actual).toMatchSnapshot();
