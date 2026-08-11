@@ -1,6 +1,6 @@
 // @ts-check
 
-import _ from 'lodash';
+import _ from "lodash";
 
 /**
  * Make joints from tree
@@ -36,16 +36,11 @@ export const makeJoints = (tree) => {
     }
 
     const flatChildren = _.flatten(children);
-    const neighbors = [...flatChildren, parent].filter(
-      (n) => n && !_.isArray(n),
-    );
+    const neighbors = [...flatChildren, parent].filter((n) => n && !_.isArray(n));
 
     return {
       [name]: neighbors,
-      ...children.reduce(
-        (acc, child) => ({ ...acc, ...iter(child, name) }),
-        {},
-      ),
+      ...children.reduce((acc, child) => ({ ...acc, ...iter(child, name) }), {}),
     };
   };
 

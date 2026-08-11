@@ -1,65 +1,60 @@
 // @ts-check
 
-import {
-  buildTreeFromLeaf,
-  makeJoints,
-  sortJoints,
-  sortTree,
-} from '../index.js';
+import { buildTreeFromLeaf, makeJoints, sortJoints, sortTree } from "../index.js";
 
-describe('Joints', () => {
+describe("Joints", () => {
   const tree = [
-    'A',
+    "A",
     [
       [
-        'C',
+        "C",
         [
           [
-            'F',
+            "F",
             [
-              ['J', [['O'], ['N']]],
-              ['I', [['M']]],
+              ["J", [["O"], ["N"]]],
+              ["I", [["M"]]],
             ],
           ],
-          ['G', [['K'], ['L']]],
+          ["G", [["K"], ["L"]]],
         ],
       ],
-      ['B', [['E'], ['D', [['H']]]]],
+      ["B", [["E"], ["D", [["H"]]]]],
     ],
   ];
 
   let joints;
 
-  it('#makeJoints', () => {
+  it("#makeJoints", () => {
     joints = makeJoints(tree);
     expect(joints).toMatchSnapshot();
   });
 
-  it('#buildTreeFromLeaf', () => {
-    const actual = buildTreeFromLeaf(joints, 'F');
+  it("#buildTreeFromLeaf", () => {
+    const actual = buildTreeFromLeaf(joints, "F");
     expect(actual).toMatchSnapshot();
   });
 
-  it('#sortJoints', () => {
+  it("#sortJoints", () => {
     const actual = sortJoints(joints);
     expect(actual).toMatchSnapshot();
   });
 
-  it('#sortTree', () => {
+  it("#sortTree", () => {
     const actual = sortTree(tree);
     expect(actual).toMatchSnapshot();
   });
 
-  it('#sortTree with duplicate leafs', () => {
+  it("#sortTree with duplicate leafs", () => {
     const treeWithDuplicateLeafs = [
-      'B',
+      "B",
       [
-        ['D'],
+        ["D"],
         [
-          'A',
+          "A",
           [
-            ['C', [['F'], ['E']]],
-            ['B', [['D']]],
+            ["C", [["F"], ["E"]]],
+            ["B", [["D"]]],
           ],
         ],
       ],
