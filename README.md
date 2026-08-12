@@ -2,6 +2,14 @@
 
 [![github action status](https://github.com/hexlet-components/js-graphs/workflows/Node%20CI/badge.svg)](https://github.com/hexlet-components/js-graphs/actions)
 
+## Зачем это нужно
+
+Работа с деревьями и графами: построение из списка связей, обход, сортировка.
+Нужна курсам, где важна структура данных, а не разбор конкретного формата.
+
+Деревья представлены обычными вложенными массивами, поэтому их видно целиком в
+исходнике и легко сравнить глазами.
+
 ## Install
 
 ```sh
