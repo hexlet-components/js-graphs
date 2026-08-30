@@ -6,24 +6,24 @@
 
 ### Table of Contents
 
--   [makeJoints][1]
-    -   [Parameters][2]
-    -   [Examples][3]
--   [buildTreeFromLeaf][4]
-    -   [Parameters][5]
-    -   [Examples][6]
--   [sortJoints][7]
-    -   [Parameters][8]
-    -   [Examples][9]
--   [map][10]
-    -   [Parameters][11]
-    -   [Examples][12]
--   [makeAssociations][13]
-    -   [Parameters][14]
-    -   [Examples][15]
--   [sortTree][16]
-    -   [Parameters][17]
-    -   [Examples][18]
+- [makeJoints][1]
+    - [Parameters][2]
+    - [Examples][3]
+- [buildTreeFromLeaf][4]
+    - [Parameters][5]
+    - [Examples][6]
+- [sortJoints][7]
+    - [Parameters][8]
+    - [Examples][9]
+- [map][10]
+    - [Parameters][11]
+    - [Examples][12]
+- [makeAssociations][13]
+    - [Parameters][14]
+    - [Examples][15]
+- [sortTree][16]
+    - [Parameters][17]
+    - [Examples][18]
 
 ## makeJoints
 
@@ -31,7 +31,7 @@ Make joints from tree
 
 ### Parameters
 
--   `tree` **[Array][19]** 
+- `tree` **[Array][19]**
 
 ### Examples
 
@@ -65,8 +65,8 @@ Build tree from leaf
 
 ### Parameters
 
--   `joints` **[Object][20]** 
--   `name` **[String][21]** (leaf name)
+- `joints` **[Object][20]**
+- `name` **[String][21]** (leaf name)
 
 ### Examples
 
@@ -100,7 +100,7 @@ Sort joints
 
 ### Parameters
 
--   `joints` **[Object][20]** 
+- `joints` **[Object][20]**
 
 ### Examples
 
@@ -133,8 +133,8 @@ Map tree
 
 ### Parameters
 
--   `callbackFn` **[Function][22]** 
--   `tree` **[Array][19]** 
+- `callbackFn` **[Function][22]**
+- `tree` **[Array][19]**
 
 ### Examples
 
@@ -169,8 +169,8 @@ Make associations (key-value pairs)
 
 ### Parameters
 
--   `uniqueTree` **[Array][19]** (tree with unique leaf names)
--   `tree` **[Array][19]** 
+- `uniqueTree` **[Array][19]** (tree with unique leaf names)
+- `tree` **[Array][19]**
 
 ### Examples
 
@@ -215,7 +215,7 @@ Sorts leafs in a tree (does not change its structure)
 
 ### Parameters
 
--   `tree` **[Array][19]** 
+- `tree` **[Array][19]**
 
 ### Examples
 
