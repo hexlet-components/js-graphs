@@ -254,7 +254,7 @@ exports[`Joints > #sortTree 1`] = `
 ]
 `;
 
-exports[`Joints > #sortTree with duplicate leafs 1`] = `
+exports[`Joints > #sortTree with duplicate leaves 1`] = `
 [
   "B",
   [

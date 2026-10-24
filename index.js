@@ -191,13 +191,13 @@ const map = (callbackFn, tree) => {
  * // }
  */
 const makeAssociations = (uniqueTree, tree) => {
-  const uniqueLeafs = _.flattenDeep(uniqueTree);
-  const leafs = _.flattenDeep(tree);
-  return _.zipObject(uniqueLeafs, leafs);
+  const uniqueLeaves = _.flattenDeep(uniqueTree);
+  const leaves = _.flattenDeep(tree);
+  return _.zipObject(uniqueLeaves, leaves);
 };
 
 /**
- * Sorts leafs in a tree (does not change its structure)
+ * Sorts leaves in a tree (does not change its structure)
  * @param {Array} tree
  * @returns {Array} sorted tree
  * @example

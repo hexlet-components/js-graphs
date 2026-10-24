@@ -45,8 +45,8 @@ describe("Joints", () => {
     expect(actual).toMatchSnapshot();
   });
 
-  it("#sortTree with duplicate leafs", () => {
-    const treeWithDuplicateLeafs = [
+  it("#sortTree with duplicate leaves", () => {
+    const treeWithDuplicateLeaves = [
       "B",
       [
         ["D"],
@@ -60,7 +60,7 @@ describe("Joints", () => {
       ],
     ];
 
-    const actual = sortTree(treeWithDuplicateLeafs);
+    const actual = sortTree(treeWithDuplicateLeaves);
     expect(actual).toMatchSnapshot();
   });
 });
